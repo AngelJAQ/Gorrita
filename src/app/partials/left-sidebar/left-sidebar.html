@@ -1,0 +1,26 @@
+<div class="wrapper">
+  <div class="header-sidebar">
+    <button class="icon-close" (click)="cerrar_drawer()">
+      <img src="../../../assets/images/cerrar_sidebar.png" alt="Cerrar">
+    </button>
+  </div>
+
+  <div class="body-sidebar">
+    <nav class="menu">
+      <ul>
+        <li>
+          <a routerLink="/" routerLinkActive="active" class="link-item">Inicio</a>
+        </li>
+        <li>
+          <a routerLink="/products" routerLinkActive="active" class="link-item">Lista de Productos</a>
+        </li>
+        <li>
+          <a routerLink="/cart" routerLinkActive="active" class="link-item">Carrito de Compras</a>
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="active" class="link-item">Acerca de la Aplicación</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
