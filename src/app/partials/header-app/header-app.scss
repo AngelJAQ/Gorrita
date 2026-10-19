@@ -1,39 +1,84 @@
+/* Variables de color y tipografía */
+$bg-header: #1b720a;
+$text-color: #d2d9e4;
+$hover-color: #1565c0;
+$font-family: 'Segoe UI', Roboto, sans-serif;
+
 .header-app {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  //width: 100%;
-  height: 10vh;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #5DADE2;
-}
+  background-color: $bg-header;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
-.icon-list {
-  width: 10%;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: ms-auto;
+    width: 100%;
+  }
 
-.box-img {
-  width: 80%;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+// Margenes del Menu de Navegación
+  .navbar-collapse {
+    margin-left: auto; 
+    margin-right: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 0;
+  }
 
-.logo-marca{
-  width: 50px;
-  height: 50px;
-  padding: 50px 0px 0px 50px;
-}
+  .navbar {
+    padding: 10px;
+  }
 
-.icon-menu{
-  color: #cd0000;
+  // Logo
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: $text-color !important;
+    text-decoration: none;
+
+    .logo-marca {
+      width: auto;
+      height: 60px;
+      object-fit: contain;
+      padding: 0 0 0 50px;
+    }
+  }
+
+  // Lista de items de navegación
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .nav-item {
+      margin: 0;
+      list-style: none;
+
+      .custom-link {
+        color: $text-color !important;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        text-underline-offset: 4px;
+        transition: color 0.2s ease, opacity 0.2s ease;
+        padding: 0.5rem 0;
+
+        &:hover,
+        &.active {
+          color: $hover-color !important;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
 }

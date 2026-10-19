@@ -1,1 +1,30 @@
-<p>about-screen works!</p>
+<div class="about-screen">
+<section class="about">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <mat-drawer #drawer mode="over" position="start">
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+      <div class="body-about">
+        <h1 class="title-about">Acerca de Gorrita</h1>
+        <p class="description-about">
+          Este es un Proyecto de Investigación y Desarrollo (I+D) que tiene como objetivo desarrollar un modelo que permita predecir el rendimiento del cultivo de cebada y convertirlo en una solución tecnológica funcional. El proyecto busca mejorar la eficiencia y productividad del cultivo de cebada mediante el uso de tecnologías avanzadas y análisis de datos.
+        </p>
+        Las Tecnologías que se usaron para realizar este proyecto son: 
+        <ol>
+          <li>Angular</li>
+          <li>Angular Material</li>
+          <li>Node.js</li>
+          <li>Python</li>
+        </ol>
+        <img src="assets/img/convocatoria-2026-que-es.jpg" class="logo-about">
+      </div>
+      <br>
+      <app-footer-app></app-footer-app>
+    </mat-drawer-container>
+  </div>
+</section>
+</div>
