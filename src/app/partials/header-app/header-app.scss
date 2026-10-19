@@ -1,7 +1,7 @@
 /* Variables de color y tipografía */
-$bg-header: #1b720a;
-$text-color: #d2d9e4;
-$hover-color: #1565c0;
+$bg-header: #328b45;
+$text-color: #000000;
+$hover-color: #ffffff;
 $font-family: 'Segoe UI', Roboto, sans-serif;
 
 .header-app {
@@ -40,7 +40,7 @@ $font-family: 'Segoe UI', Roboto, sans-serif;
     align-items: center;
     gap: 12px;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     color: $text-color !important;
     text-decoration: none;
 
@@ -65,7 +65,7 @@ $font-family: 'Segoe UI', Roboto, sans-serif;
       .custom-link {
         color: $text-color !important;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.25rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
         text-decoration: none;

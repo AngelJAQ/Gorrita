@@ -2,14 +2,30 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  //width: 100%;
-  max-height: 100%;
+}
+
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+mat-drawer-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  ::ng-deep .mat-drawer-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 }
 
 .body-home {
@@ -22,56 +38,11 @@
   padding: 20px;
 }
 
-.section-image {
-  height: 300px;
-  width: 100%;
-  //background-image: url('../../../assets/images/fondo-home.jpg');
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 20px;
+app-header-app,
+app-footer-app {
+  display: block;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-mat-card {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-mat-card-header {
-  display: flex;
-  align-items: center;
-  background-color: #3f51b5;
-  color: white;
-  padding: 10px;
-}
-
-mat-card-header mat-icon {
-  font-size: 24px;
-}
-
-mat-card-header span {
-  margin-left: 10px;
-  font-weight: bold;
-}
-
-mat-card-content {
-  padding: 15px;
-  font-size: 16px;
-  color: #333;
-}
-
-mat-card-actions {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-button {
-  font-size: 16px;
+.app-footer-app {
+  margin-top: auto;
 }
